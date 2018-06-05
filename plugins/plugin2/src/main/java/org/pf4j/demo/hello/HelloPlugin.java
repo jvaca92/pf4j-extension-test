@@ -56,6 +56,7 @@ public class HelloPlugin extends SpringPlugin {
         return applicationContext;
     }
 
+    @Extension
     public static class HelloGreeting implements Greeting {
 
         @Autowired
