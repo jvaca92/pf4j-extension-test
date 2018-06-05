@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <unzip src="target/pf4j-spring-demo-plugin2-0.5.0-SNAPSHOT.jar" dest="target/plugin-classes"/>
+</target>
+</project>
