@@ -56,4 +56,18 @@ public class HelloPlugin extends SpringPlugin {
         return applicationContext;
     }
 
+    public static class HelloGreeting implements Greeting {
+
+        @Autowired
+        private MessageProvider messageProvider;
+
+        @Override
+        public String getGreeting() {
+//            return "Hello";
+            // complicate a little bit the code
+           return messageProvider.getMessage();
+        }
+
+    }
+
 }
